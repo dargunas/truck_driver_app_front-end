@@ -30,6 +30,7 @@ public class TripsForLoadController {
         return tripsForLoadRepository.findById(id).get();
     }
 
+
     @PostMapping("/postNew")
     public TripsForLoad postNew (@RequestBody TripsForLoad tripsForLoad){
         return tripsForLoadService.postNew(tripsForLoad);
